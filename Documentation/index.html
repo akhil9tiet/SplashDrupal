@@ -1,0 +1,923 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Splash - MultiPurpose, Commerce Drupal Theme</title>
+	<meta name="description" content="">
+	<meta name="author" content="DrupalExp">
+	<meta name="copyright" content="DrupalExp">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-07-21">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		#documenter_logo img {
+			width:170px;
+			height:50px;
+		}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		ul.line30 li {line-height:30px;}
+	</style>
+	
+</head>
+<body class="documenter-project-detie">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"><img style='text-align:center;padding-top:20px;' src="assets/images/logo.png"><!--<h1 style='text-align:center;padding-top:70px;'>Splash</h1>--></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Introduction</a></li>
+			<li><a href="#introduction" title="Introduction">Overview</a></li>
+			<li><a href="#installation" title="Installation">Installation</a></li>
+			<li>
+				<a href="#theme_seting" title="Theme Seting">Theme Settings</a>
+				<ul>
+					<li><a href="#layout-settings" title="Layout Settings">Layout Settings</a></li>
+					<li><a href="#preset-settings" title="Preset Settings">Preset Settings</a></li>
+					<li><a href="#other-settings" title="Other Settings">Other Settings</a></li>
+				</ul>
+			</li>
+			<li><a href="#page_settings" title="Page Settings">Page Settings</a>
+				<ul>
+					<li><a href="#animation-settings" title="Other Settings">Animation Settings</a></li>
+					<li><a href="#title-settings" title="Other Settings">Title Settings</a></li>
+				</ul>
+			</li>
+			<li><a href="#menu_configuration" title="Menu configuration">Menu configuration</a></li>
+			<li><a href="#slider_configuration" title="Slider configuration">Slider configuration</a></li>
+			<li><a href="#using_shortcodes" title="Using Shortcodes">Splash Shortcodes</a></li>
+			<li><a href="#block_configuration" title="Block Configuration">Drupalexp Block</a></li>
+			<li><a href="#blog_configuration" title="Blog Configuration">Blog configuration</a></li>
+			<li><a href="#portfolio_configuration" title="Portfolio configuration">Drupal Portfolio</a></li>
+			<li><a href="#drupal_commerce" title="Drupal Commerce">Drupal Commerce</a>
+				<ul>
+					<li><a href="#commerce_modules" title="Commerce Modules Required">Commerce modules</a></li>
+					<li><a href="#Splash_shop" title="Splash Shop">Splash Commerce</a></li>
+					<li><a href="#widget_product" title="Widgets Product">Widgets Product</a></li>
+				</ul>
+			</li>
+			<li><a href="#thank_you" title="Portfolio configuration">Thank you</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright DrupalExp 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+		<!-- Section  document cover -->
+		<section id="documenter_cover">
+		<h1>Splash - MultiPurpose, Drupal Commerce Theme</h1>
+		<div id="documenter_buttons"></div>
+		<hr>
+		<ul>
+			<li>Created: 07/21/2014</li>
+			<li>Latest update: 07/21/2014</li>
+			<li>By: DrupalExp</li>
+		</ul>
+		<p>Thank you for purchasing the theme, If you have questions please submit your ticket to <a href="http://themesvision.com/forum">support forum</a></p>
+	</section>
+		<!-- Section  introduction -->
+		<section id="introduction">
+		<div class="page-header"><h3>Overview</h3><hr class="notop"></div>
+		<p>
+			Splash is a flat, clean and professional multi-purpose Drupal theme for any commerce, business, corporate, portfolio, products, marketing website. It's integrated with Drupal Commerce that let’s you easily build your own commerce solution. The theme with drap & drop layout builder with fully responsive design and retina ready, looks stunning on any device. It features a very clean and professional design that is perfect for showcasing your work, and have tons of shortcode possibilities with unlimited variations and colors. 
+		</p>
+		
+		<p>
+			Feel free to visit our&nbsp;<a href="http://themesvision.com/forum">support forum</a> if you need any support for the theme that cannot be found in this documentation.
+		</p>
+	</section>
+		<!-- Section  install -->
+		<section id="installation">
+		<div class="page-header"><h3>Installation</h3><hr class="notop"></div>
+		<p>
+			<strong>Full installation</strong></p>
+		<p>
+			The quickstart package came with theme helps you to build a copy of our live demo at <a href="http://demo.themesvision.com/#Splash">http://demo.themesvision.com/#Splash</a>. It is the highly&nbsp;recommended way for newbies or if you don&rsquo;t want to go through the individual setup of each module and theme.</p>
+		<p>	STEPS to do:</p>
+		<ol>
+			<li>Create a new database in your phpmyadmin/cPanel tools and create database user.</li>
+			<li>Import the supplied database.sql.zip file (located in Packages folder in your package) into this database.</li>
+			<li>Upload the &quot;demo&quot; folder to your server. In most cases you will unpack it under the public_html folder, www root folder (windows hosting) or the root folder of your server.</li>
+			<li>Change the database info in sites/default/settings.php to match the database name, user and password for your new created database.</li>
+			<li>Done. You can login to manage site folow url: http://domain.com/user with the default admin account is: username: admin, password: admin.</li>
+		</ol>
+		<p>
+			<strong>Profile installation</strong></p>
+		<p>
+			Provided with this package is a Drupal install profile (called drupalexp_Splash) which is used to quickly install new sites with the Splash theme. This profile will install all required modules and setup the Splash theme as the default them</p>
+		<p>STEPS to do:</p>
+		<ol>
+			<li>Create a new database in your phpmyadmin/cPanel tools and create database user.</li>
+			<li>Download the latest version of Drupal 7 from Drupal.org and upload to your server.</li>
+			<li>Copy the drupalexp_Splash profile folder located in the package (packages/profiles) into your sites profiles folder.</li>
+			<li>Install your drupal site normally, the drupalexp_Splash profile will auto load as default.</li>
+		</ol>
+		<p>
+			<strong>Theme Only</strong></p>
+		<p>
+			The following explains how to install the theme with existing sites. In order to do this there are several steps that must be completed.</p>
+		<ol>
+			<li>
+				Copy both the <strong>Splash</strong> and <strong>drupalexp</strong> themes (located in package at Packages/themes) into your sites theme directory (sites/all/themes)..</li>
+			<li>
+				Install and enable <strong>jquery_update</strong> module and change jQuery version to 1.7
+			</li>
+			<li>
+				Enable the <strong>Splash</strong> theme from Appearance menu.
+			</li>
+			<li>
+				Copy modules from sub folders contrib and drupalexp at Packages/modules to sites/all/modules and enable them
+			</li>
+			<li>
+				Copy libraries from Packages/libraries to sites/all/libraries.
+			</li>
+		</ol>
+	</section>
+		<!-- Section  theme settings -->
+		<section id="theme_seting">
+	<div class="page-header"><h3>Theme Seting</h3><hr class="notop"></div>
+	<p>
+	Splash theme provides many settings which help you control your site very easily. By access to <strong>Appearance</strong> <strong>&#65515;</strong> <strong>Settings</strong> <strong>&#65515;</strong> <strong>Splash</strong> you can see settings as below: 
+	</p>
+	<p>You can reference to <a href="http://themesvision.com/forum/what-drupalexp-framework-and-how-it-works">Drupalexp Framework</a> when reading this section to understand clearly.</p>
+	<section id="layout-settings"><h4> Layout Settings</h4>	
+		<p>
+		Splash sub theme extends from <strong>Drupalexp framework</strong> provides the ability to build any responsive layout you can think of by using simple actions such as <strong>Drag &amp; Drop </strong> elements on UI. It also supports to create <strong>multiple layouts</strong>, so you can show your pages with different shapes very easily.</p>
+		<p align="center">
+				<img alt="" src="assets/images/Sample-Spash-layout.png"/><br/>
+				Figure : <strong>Sample layout in Splash theme </strong>
+		</p>
+		<p>
+		Top, Header, Page Title... with gray background called <strong>sections</strong>. Elements in each of section and unassigned area called <strong>regions</strong>.</p>
+		<p>Using this framework you can move to change the order of sections and regions, set the widths of individual block regions or remove from the site layout.</p>
+		<h5><strong>Splash theme can be easily expanded by custom the layout such as</strong></h5>
+		<ol style="list-style-type:lower-alpha;">
+			<li>
+				<strong>Add a new layout</strong></li>
+		</ol>
+		<p>
+			In Splash theme, you can build unlimited layouts. To create a new layout, click on <strong>Add layout</strong> link, the system will create a copy of Default layout that.</p>
+		<p>
+			You can customize on this layout to get layout which you like by</p>
+		<ul>
+			<li>
+				Adding/Removing sections, regions.</li>
+			<li>
+				Changing the order of them.</li>
+		</ul>
+		<ol style="list-style-type:lower-alpha;">
+			<li value="2">
+				<strong>Clone a layout</strong></li>
+		</ol>
+		<p>
+			To clone a layout, click on the name of layout which you want to duplicate. After that, click on <strong>clone </strong>icon to create a duplicate of layout was chosen.</p>
+		<ol style="list-style-type:lower-alpha;">
+			<li value="3">
+				<strong>Remove a layout</strong></li>
+		</ol>
+		<p>
+			To remove a layout, click on the name of the layout which you want to clone (except default layout). After that, click on <strong>delete</strong> icon to remove this layout from Splash theme.</p>
+			
+		<ol style="list-style-type:lower-alpha;">
+			<li value="4">
+				<strong>Assign content to new layout</strong></li>
+		</ol>
+		<div style="width:50%;float:left">
+			<p>
+			When you create a new layout, you can set pages will be display with this layout by inputting path to <strong>Pages Assignment</strong> textarea at bottom layout. 
+			</p>
+		</div>
+		<div style="width:50%;float:left; margin-top:-10px;">
+			<img src="assets/images/assign-layout.png"/>
+		</div>
+		<div style="clear:both"/>
+	
+		<!-- Section Settings-->	
+		<h5><strong>Section settings</strong></h5>
+		<div id="section-setting">
+			<div style="width:50%;float:left;">
+				<div style="padding-right:10px;">
+				<p>You can re-order sections or move regions in section to other sections. Ex: If you want banner section to appear above header section, you can drag the banner section above the header and save the settings. Saving these settings will automatically apply these changes when you view the front end of your site. Additional, you can customised through:</p>
+				<ul class='line30'>
+					<li><strong>Full Width:</strong> this setting provides the ability to make sections into a full width responsive layout, so that the content will be the full width of the browser. It is usually use in cases show slider full width or region have full width background .</li>
+					<li><strong>Visible:</strong> this setting provides visibility section based on the browser size</li>
+					<li><strong>Background color:</strong> this setting provides the ability to use color code to set individual sections with a background colour which applied to them, without requiring any use of CSS.</li>
+					<li><strong>Stick on top:</strong> this setting make the section stick to the top of the screen permanently per page </li>
+					<li><strong>Custom class:</strong> this setting allows user apply owner class to style section </li>
+					<li><strong>Custom column padding:</strong> this setting allows user set again padding of columns in section. Default, each columns in section padding 15px. You can set to 0 (no padding). </li>
+				</ul>
+				</div>
+			</div>
+			<div style="width:50%;float:left;">
+				<img src="assets/images/section-settings.png" />
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		
+		<!-- Region Settings-->	
+		<h5><strong>Region settings</strong></h5>
+		<div id="region-setting">
+			<div style="width:50%;float:left;">
+			<div style="padding-right:10px;">
+				<p>
+					Similar to sections, you can use the same arrows per region to change the order at which they are rendered within each of section or move them to another sections.
+				</p>
+				<p>	
+					By clicking the gears icon on each region you can set width to each region on different devices.
+				</p>
+				<p>
+					Based on Twitter Bootstraps 3.x with 12 columns system, you can specify the width of each region. All regions within each section of the theme should add up to 12 cols.
+				</p>
+				<ul class='line30'>
+					<li>
+						6 columns in large device (a haft width of section)</li>
+					<li>
+						6 columns to medium device (a haft width of section)</li>
+					<li>
+						6 columns to small device (a haft width of section)</li>
+					<li>
+						12  columns to very small device section (full width section)
+					</li>
+				</ul>
+			</div>
+			</div>
+			
+			<div style="width:50%;float:left;">
+				<img src="assets/images/region-settings.png" />
+			</div>
+			<div style="clear:both"></div>
+		</div>
+	</section>
+<section id="preset-settings">
+	<h4>Presets Settings</h4>
+<p>
+	Splash theme provides <b>dark</b> and <b>white</b> style with 6 colors to get you started and you can define unlimited additional color. 
+</p>
+	<p>	Preset begin with "Dark-" prefix will be dark style </p>
+	<p> Preset begin with "White-" will get white style. </p>
+	<p>To set default color for the theme by clicking on <strong>Presets</strong> vertical tab at the left side and choose color in dropdown labeled <strong>Default preset</strong></p>
+<p>The <strong>Preset settings</strong> provide the functionality to create your own colors so that you can have full control over the color scheme of your website.</p>
+<p align="center"><img src="assets/images/preset-settings.png"/></p>
+</section>
+<section id="other-settings">
+	<h4>Other Settings</h4>
+	<div style="width:50%;float:left;">
+	The Other setting under <strong>Basic</strong> tab allow you setting the layout, direction, set Google Analytic code and Custom background site at here.
+	<div>
+		<h6>
+			<strong>1. Boxed or Wide (Full width)</strong>
+		</h6>
+		The layout style allows the site will be a boxed layout centred in the browser or wide (full width).
+		The wide is default layout site.
+	</div>
+	<div>
+		<h6>
+			<strong>2. Direction of site</strong>
+		</h6>
+		<p>The direction allows the theme to display with different reading style. 
+		</p>
+		- Default (current language direction). Ex: English has default direction LTF while Arabic has RTL default <br/>
+		- LTR refers to 'left to right' reading <br/>
+		- RTL refers to 'right to left'.
+	</div>
+	<div>
+		<h6>
+			<strong>3. Google Analytics </strong>
+		</h6>
+		Add your GA code to tracking your site quickly. Just paste your code without script tag here.
+	</div>
+	<div>
+		<h6>
+			<strong>4. Customize background site </strong>
+		</h6>
+		<p>It is ONLY use in layout <strong>boxed</strong> and no effect in <strong>Wide</strong>. You should create class(es) for your background site and put it into text Custom HTML Classes field. You can define more your owner classes to custom background image site which you think.</p>
+		<p>Splash theme support 8 background images with class from bg1->bg8. You can see how background show in Quick setting demo site</p>
+	</div>
+	</div>
+	<div style="width:50%;float:left;margin-top:-10px;">
+		<img src='assets/images/other-settings.png'/>
+	</div>
+	<div style="clear:both;"></div>
+	<div>
+		<h6>
+			<strong>5. Header style </strong>
+		</h6>
+		<p>Splash supports 3 different style header are: White color, Background color and Dark color</p>
+		<p>If you want to set header with: </p>
+		<ul class="line30">
+		<li>- Background color: ONLY put class <strong>header-color</strong> to Custom HTML Classes field</li>
+		<li>- Dark color: ONLY put class <strong>header-dark</strong> to Custom HTML Classes field</li>
+		<li>- White color: ONLY remove class <strong>header-color</strong> or <strong>header-dark</strong> out of Custom HTML Classes field</li>
+		</ul>
+	</div>	
+	
+</section>
+</section>
+		<!-- Section  Page settings -->
+		<section id="page_settings">
+
+	<div class="page-header"><h3>Page Settings</h3><hr class="notop"></div>
+	
+	<section id="animation-settings"><h4>Animation Setting</h4>
+	<div>
+		<div style="width:50%;float:left;"> By accessing to <strong>DrupalExp &#65515;  Animation Settings </strong>menu, you can: 
+		<p><strong>Enable</strong> </p>
+		<p><strong>Disable</strong></p> 
+		<p>animation effect on specific pages by inputting Drupal paths to Pages textarea.</p>
+		<p><strong>Note:</strong> We can use wildcard character such as * in path</p>
+		</div>
+		
+		<div style='width:50%;float:left;margin-top:-10px;'>
+		<img src='assets/images/animation-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	</section>
+	<section id="title-settings"><h4>Page Title Setting</h4>
+	<div>
+		<p style="width:50%;float:left;"> By accessing to <strong>DrupalExp &#65515;  Page Settings </strong>menu, you can configure sub title page by putting a split character to split between title and sub-title. We use "~" character such as default. You can modify to any character which you like.</p>
+		<p style='width:50%;float:left;'>
+		<img src='assets/images/page-title-settings.png'/><br/>
+		</p>
+		<div style="clear:both"></div>
+	</div>
+	</section>
+</section>
+		<!-- Section menu -->
+		<section id="menu_configuration">
+	<div class="page-header"><h3>Menu configuration</h3><hr class="notop"></div>
+<p>
+	Follow the URL http://yoursite.com/admin/structure/menu/manage/main-menu to manage menu at header.</p>
+<ul>
+	<li>
+		Click on Add link to add a new menu item</li>
+	<li>
+		Uncheck on Enable column to disable a menu item</li>
+	<li>
+		Click on Edit link to modify a menu item</li>
+</ul>
+
+</section>
+		<!-- Section slider -->
+		<section id="slider_configuration">
+	<div class="page-header"><h3>Slider configuration</h3><hr class="notop"></div>
+<ol>
+	<li>
+		How to make a slider</li>
+</ol>
+<p>
+	Please follow this video to make slider <a href="https://www.youtube.com/watch?v=2-km9lH9-Ss">https://www.youtube.com/watch?v=2-km9lH9-Ss</a></p>
+</section>
+	<!-- Section shortcode -->
+	<section id="using_shortcodes">
+	<div class="page-header"><h3>Splash Shortcodes</h3><hr class="notop"></div>
+	<p>
+		When you write content for your website, chances are, you&rsquo;ll use a lot of the same <acronym>HTML</acronym> and <acronym>CSS</acronym> to include special functionality on specific pages. The problem is, repeating this code, day in and day out, can be tedious and prone to errors. Shortcodes are just that, short bits of code that cut down on repetitive strings of HTML, and can be inserted anywhere in your site.
+	</p>
+	<h5><strong>Enable Shortcode</strong></h5>
+	<p>The available shortcodes can be activated by going to Configuration &#65515; Text Formats &#65515; Full HTML &#65515; Configure. Once here you need to enable the Shortcodes filter. This will enable the module filter to be able to setup available shortcodes.</p>
+	<p style="text-align:center">
+		<img src="assets/images/enable-shortcode.png"/> <br/>
+		<img src="assets/images/filter-shortcode.png"/>
+	</p>
+	<p>
+		The following shortcodes are included with Splash theme. You can see shortcode demo at <a href="http://demo.themesvision.com/drupal/Splash/">Shortcode Splash demo</a> by accesing to <strong>Features &#65515; Shortcodes </strong>menu
+	</p>
+	<ol>
+		<li><strong>Accordion</strong></li>
+	</ol>
+	<p>
+		Accordion shortcode allows you to provide multiple panes and display them one at a time. We can create an accordion quickly by using syntax as below:
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[accordions]
+[accordion title=&quot;TITLE_ITEM_1&quot; expand="TRUE|FALSE"]Content Item 1 here[/accordion]
+[accordion title=&quot;TITLE_ITEM_2&quot; expand="TRUE|FALSE"]Content Item 2 here[/accordion]
+[accordion title=&quot;TITLE_ITEM_{I}&quot; expand="TRUE|FALSE"]Content Item {I} here[/accordion]
+[/accordions]
+	</pre>
+	<p>
+		NOTE: Default value of expand property is FALSE
+	</p>
+	<ol start="2">
+		<li><strong>Tabs</strong></li>
+	</ol>
+	<p>
+		<strong>Tabs</strong> shortcode is used for structuring content with tabs (uses DIVs). Each tab has title and content. When certain tab is selected, its content is displayed. Each tab can have two states - selected and unselected. You can insert horizontal or vertical tabs.
+	</p>
+	<p>	We can create a tab quickly by using syntax as below:</p>
+	<pre class="prettyprint lang-html linenums">
+[tabs class=&quot;STYLE&quot;]
+[tab title=&quot;TITLE_ITEM_1&quot; icon=&quot;ICON_NAME_ITEM_1&quot;]Content Item 1 here[/tab]
+[tab title=&quot;TITLE_ITEM_2&quot; icon=&quot;ICON_NAME_ITEM_2&quot;]Content Item 2 here[/tab]
+[tab title=&quot;TITLE_ITEM_3&quot; icon=&quot;ICON_NAME_ITEM_3&quot;]Content Item 3 here[/tab]
+[/tabs]
+	</pre>
+	<p>	NOTE: STYLE can be one of values</p>
+	<ul>
+		<li>
+			vertical</li>
+		<li>
+			horizontal (default)</li>
+	</ul>
+	NOTE: icon is a valid class name from Font Awesome
+
+	<ol start="3">
+		<li><strong>Featured Box</strong></li>
+	</ol>
+
+	<p>We can create a featured box quickly by using syntax as below:</p>
+	<pre class="prettyprint lang-html linenums">
+[box align="left|right|center" border ="none,square,circle" background="yes|no" icon="ICON" title="TITLE"]CONTENT HERE[/box]
+	</pre>
+	<ul class="line30">
+		<li><strong>align:</strong> left, right, center </li>
+		<li><strong>border:</strong> none (default),square,circle</li>
+		<li><strong>background:</strong> yes, no (default)</li>
+		<li><strong>icon:</strong> Font Awesome class</li>
+	</ul>
+
+	<ol start="4">
+		<li><strong>Service Box</strong></li>
+	</ol>
+
+	<p>	We can create a service box quickly by using syntax as below:</p>
+	<pre class="prettyprint lang-html linenums">
+[flipbox type='icon|img' icon='ICON' image='IMAGE' title='TITLE']CONTENT[/flipbox]
+	</pre>
+	<ul class="line30">
+		<li><strong>type:</strong> icon OR img </li>
+		<li><strong>icon:</strong> Font Awesome class</li>
+		<li><strong>image:</strong> path to image file</li>
+	</ul>
+
+	<ol start="5">
+		<li>
+			<strong>Pie chart</strong></li>
+	</ol>
+	<p>
+		Pie chart bar displays status of a determinate or indeterminate process. We can create a pie chart quickly by using shortcode with syntax as below:</p>
+	<pre class="prettyprint lang-html linenums">
+[piegraph percent="PERCENT" title="TITLE"][/piegraph]
+	</pre>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+[piegraph title='Graphic Design' percent='70' width='']Lorem ipsum dolor sit amet, consectetuer adipiscing[/piegraph]
+	</pre>
+	<p style="margin-left:1.0in;">&nbsp;</p>
+	<ol start="6">
+		<li>
+			<strong>Skill bar</strong></li>
+	</ol>
+	Shortcode:
+	<pre class="prettyprint lang-html linenums">
+[skillbar percent='']Title[/skillbar]
+	</pre>
+	<ul>
+		<li>
+			<strong>percent:</strong> 0 - 100</li>
+	</ul>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+[skillbar percent='70']Adobe Photoshop[/skillbar] 
+[skillbar percent='90']Adobe Illustrator[/skillbar] 
+[skillbar percent='100']Adobe Dreamviewer[/skillbar] 
+[skillbar percent='90']Drupal[/skillbar] 
+[skillbar percent='95']HTML &amp; CSS[/skillbar] 
+[skillbar percent='100']Customer Support[/skillbar]
+	</pre>
+
+	<ol start="7">
+		<li>
+			<strong>Carousels</strong></li>
+	</ol>
+	<p>
+		The carousels are a dynamic presentation of contents where text and images are made visible or accessible to the user by cycling through several items.&nbsp; We can create a carousels bar quickly by using shortcode with syntax as below:
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[carousels items="TOTAL_ITEM"]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="0"]CAPTION_HERE[/carousel]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="1"]CAPTION_HERE[/carousel]
+[carousel path=&quot;PATH_TO_IMAGE&quot; sequence="2"]CAPTION_HERE[/carousel]
+[/carousels]
+	</pre>
+	<p>
+		NOTE: path can be format: public://
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[carousels items="3"]
+[carousel path="http://statics.drupalexp.com/Splash/02_about.png" sequence="0"][/carousel]
+[carousel path="http://statics.drupalexp.com/Splash/03_about.png" sequence="1"][/carousel]
+[carousel path="http://statics.drupalexp.com/Splash/04_about.png" sequence="2"][/carousel]
+[/carousels]
+	</pre>
+
+	<p style="margin-left:1.0in;">&nbsp;</p>
+	<ol start="8">
+		<li>
+			<strong>Icons</strong></li>
+	</ol>
+	<p>
+		You can easily add any of built in icons from Font Awesome to your sites with our new icon shortcodes by using syntax:
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[icon name=&quot;NAME&quot; link=&quot;URL&quot;]TEXT_HERE[/icon]
+	</pre>
+	<p>
+		NAME is a valid class name in font owesome</p>
+	<p>
+	Access to <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a> to get valid classes</p>
+	<p>Example: fa-adjust, fa-anchor...</p>
+	<ol start="9">
+		<li>
+			<strong>Button</strong></li>
+	</ol>
+	<p>
+		You can create beautiful buttons on the fly using the button shortcode. Choose between various colors, styles and sizes.&nbsp; We can create s button by using shortcode with syntax as below:</p>
+	<pre class="prettyprint lang-html linenums">
+[button size=&quot;SIZE&quot; bg=&quot;BACKGROUND_COLOR&quot; type=&quot;TYPE&quot; color=&quot;TEXT_COLOR&quot; url=&quot;LINK_TO&quot;][/button]</pre>
+	<p>
+		SIZE property can be one of values:</p>
+	<ul>
+		<li>
+			Large</li>
+		<li>
+			Small</li>
+		<li>
+			Mini</li>
+	</ul>
+
+	<ol start="10">
+		<li>
+			<strong>Stats (js)</strong></li>
+	</ol>
+	<p>
+		You can create a statistics item to run by javascript by syntax:</p>
+	<pre class="prettyprint lang-html linenums">
+[stats timer="TIMER NUMBER" number="NUMBER VALUE" class="brddark"]TITLE[/stats]
+	</pre>
+	
+	<ol start="11">
+		<li>
+			<strong>Column layout</strong></li>
+	</ol>
+	<p>
+	With the column layout shortcodes you can now break down your content into any number of advanced layouts giving variety and hierarchy. We can create column layout quickly by using shortcode with syntax as below:
+	</p>
+	<pre class="prettyprint lang-html linenums">
+[column cols=&quot;NUM_OF_COLS&quot; begin=&quot;0-OR-1&quot; end=&quot;0-OR-1&quot;]CONTENT HERE [/column]
+	</pre>
+	<ul>
+		<li>
+			begin = &quot;1&quot; indicates that it is the first column layout,</li>
+		<li>
+			end = &quot;1&quot; indicates that it is the last column layout</li>
+	</ul>
+	<p>Example:</p>
+	<p>- Shortcode of 2 columns (width = 1/2):&nbsp;</p>
+	<pre class="prettyprint lang-html linenums">
+[column cols=&quot;6&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;6&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+	</pre>
+
+	<p>- Shortcode of 3 columns (width = 1/3):&nbsp;</p>
+	<pre class="prettyprint lang-html linenums">
+[column cols=&quot;4&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;4&quot;]CONTENT HERE [/column]
+[column cols=&quot;4&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+	</pre>
+
+	<p>- Shortcode of 4 columns (width = 1/4):&nbsp;</p>
+	<pre class="prettyprint lang-html linenums">
+[column cols=&quot;3&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot;]CONTENT HERE [/column]
+[column cols=&quot;3&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+	</pre>
+
+	<p>	- Shortcode of 2 columns (width = 1/4 and 3/4):</p>
+	<pre class="prettyprint lang-html linenums">
+[column cols=&quot;3&quot; begin=&quot;1&quot;]CONTENT HERE [/column]
+[column cols=&quot;9&quot; end=&quot;1&quot;]CONTENT HERE [/column]
+	</pre>
+	<ol start="12">
+		<li>
+			<strong>Bx Slider</strong>
+		</li>
+	</ol>
+	<p>Shortcode:</p>
+	<pre class="prettyprint lang-html linenums">
+[bxslider auto='TRUE|FALSE' pager='TRUE|FALSE' control='TRUE|FALSE' min='MINIMUM ITEM TO DISPLAY' 
+max='MAXIMUM ITEM TO DISPLAY' move= 'NUMBER ITEM TO MOVE' width='ITEM WIDTH' margin='ITEM MARGIN'] 
+[bxitem] ITEM 1[/bxitem][bxitem] ITEM 2[/bxitem] [bxitem] ITEM 3[/bxitem]
+[/bxslider]
+	</pre>
+	
+	<ol start="13">
+		<li>
+			<strong>Map Shortcode</strong>
+		</li>
+	</ol>
+	<p>Shortcode:</p>
+	<pre class="prettyprint lang-html linenums">
+[maps class='' link='' title='' image='' phone='' zoom='']ADDRESS[/maps]
+	</pre>
+	<p> Exampe:
+	<pre class="prettyprint lang-html linenums">
+[maps image="http://statics.drupalexp.com/Splash/01_office.jpg" title ="OUR USA OFFICE" 
+link="http://google.com.vn" phone="+90 555 666 77 88" zoom="10"] NEW YORK CITY 2045 / 65 [/maps]
+	</pre>	
+	</p>
+	<ol start="14">
+		<li>
+			<strong>Testimonials</strong>
+		</li>
+	</ol>
+	<pre class="prettyprint lang-html linenums">
+[testimonials total_items="0" class=""]
+[testimonial name="NAME" position="" sequence = ""]CONTENT[/testimonial]
+[testimonial name="NAME" position="" sequence = ""]CONTENT[/testimonial]
+[testimonial name="NAME" position="" sequence = ""]CONTENT[/testimonial]
+[/testimonials]
+	</pre>
+	<p>
+	NOTE: sequence MUST begin with 0
+	</p>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+[testimonials total_items="3" class=""][testimonial name="Susan Anthony" position="CEO" sequence = "0" image="http://statics.drupalexp.com/splash/happy-clients-01.jpg"] Everything was thought out for your future needs. 
+Plus, Evolve support is the best support I've ever experienced, I've receive and the author going out of their way to make amendments to the Theme to suit my needs - thank you! ” [/testimonial]
+[testimonial name="Patrick Rogers" position="Manager" sequence = "1" image="http://statics.drupalexp.com/splash/happy-clients-02.jpg"]
+The nicest theme I ever worked with and I have worked with hundreds of theme, If you a thinking about getting this theme i’d definitely recommend it. [/testimonial]
+[testimonial name="Willium Smith" position="Designer" sequence = "2" image="http://statics.drupalexp.com/splash/happy-clients-03.jpg"] 
+I’d say do it! The flexibility is awesome and the possibilities are endless. I also want to thank Evolve for the brillient support with setting things up and answering questions that I had. Thumbs Up! ” [/testimonial][/testimonials]
+	</pre>
+	
+	<ol start="15">
+		<li>
+			<strong>Social</strong>
+		</li>
+	</ol>
+	<pre class="prettyprint lang-html linenums">
+[social class='' icon='' tooltip='' link='']TEXT_HERE[/social]
+	</pre>
+	Example:
+	<pre class="prettyprint lang-html linenums">
+<ul class="social">
+<li>[social icon ='fa fa-facebook' class='facebook' link='#'][/social]</li>
+<li>[social icon ='fa fa-google-plus' class='google' link='#'][/social]</li>
+<li>[social icon ='fa fa-twitter' class='twitter' link='#'][/social]</li>
+<li>[social icon ='fa fa-youtube' class='youtube' link='#'][/social]</li>
+<li>[social icon ='fa fa-linkedin' class='linkedin' link='#'][/social]</li>
+<li>[social icon ='fa fa-dribbble' class='dribbble' link='#'][/social]</li>
+<li>[social icon ='fa fa-skype' class='skype' link='#'][/social]</li>
+</ul>
+	</pre>
+	<ol start="16">
+		<li>
+			<strong>Title</strong>
+		</li>
+	</ol>
+	<pre class="prettyprint lang-html linenums">
+[title class="title|title1"]Content title[title]
+	</pre>
+	<p>
+	NOTE: If you want to use sub title in title. Put "~" character to split. </br>
+	Example: MEET OUR AWESOME TEAM MEMBERS~Mirum est notare quam littera gothica, quam nunc putamus parum claram
+	</p>
+	<p style="text-align:center">
+		<img src="assets/images/title_shortcode.png"/>
+	</p>
+</section>
+		<!-- Section Block setting-->
+		<section id="block_configuration">
+	<div class="page-header"><h3>Drupalexp Block</h3><hr class="notop"></div>
+<p>
+	The Drupalexp Block module allows any block in the system to utilise color background and animate the content using CSS3 animations</p>
+
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Block Animation</h5>
+		<ul>	
+			<li><strong>Appears animate: </strong> effect when show block content. It can be: fadeIn, fadeOut, SlideInLeft, SlideInRight...</li>
+			<li><strong>Background image:</strong> choose a image to set background for block</li>
+			<li><strong>Background image type:</strong> it can be Default or Parallax. When choosing parralax, the image background will appear with parallax effect.</li>
+		</ul>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-animation-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<p></p>
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Block Custom Style</h5>
+		<ul>	
+			<li><strong>Text align: </strong> alignment block content, it can be left, right or center</li>
+			<li><strong>Padding:</strong> set padding content in block </li>
+			<li><strong>Margin:</strong> set margin block with other elements</li>
+			<li><strong>Custom block content class:</strong> you can define owner class to customize your block</li>
+		</ul>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-style-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+	<p></p>
+	<div>
+		<div style="width:30%;float:left;">
+			<h5>Responsive Settings</h5>
+		<p>This setting provides the ability to visibility block belong to devices. (different size)</p>
+		</div>
+		
+		<div style='width:70%;float:left;margin-top:-10px;'>
+		<img src='assets/images/block-responsive-settings.png'/>
+		</div>
+		<div style="clear:both"></div>
+	</div>
+<p>
+	
+</section>
+
+<section id="blog_configuration">
+	<div class="page-header"><h3>Blog Configuration</h3><hr class="notop"></div>
+<p>
+	The Drupalexp Blog module of Splash theme provides 6 viewer styles for blog page. 
+</p>
+	
+<ul class="line30">
+	<li>Large Image + title style</li>
+	<li>Large images style</li>
+	<li>Medium Images style</li>
+	<li>Grid style</li>
+	<li>Grid sidebar style</li>
+	<li>Full width blog</li>
+</ul>
+<p>You can use any media type in blog such as: 
+	<ul class="line30">	
+		<li>Image, mp4, mp3 on local site </li>
+		<li>Video from Vimeo or Youtube resource </li>
+		<li>Audio from Soundcloud resource</li>
+	</ul>
+</p>
+<p>
+	Some widgets is used in blog page
+	<ul class="line30">	
+		<li>Latest post</li>
+		<li>Blog Categories</li>
+	</ul>
+</p>
+
+<p> Additional, to manage blog categories, go to <strong>Structure &#65515; Taxonomy &#65515; Blog Categories </strong>menu to add new item or modify it.</strong></p>
+<p style="text-align:center">
+	<img src="assets/images/blog-categories.png"/>
+</p>
+</section>
+<!-- Section Portfolio setting-->
+		<section id="portfolio_configuration">
+	<div class="page-header"><h3>Drupalexp Portfolio</h3><hr class="notop"></div>
+	<p>The <strong>Drupalexp Portfolio</strong> module combine with <strong>Drupal BxSlider</strong> module to allow dynamic portfolio pages to be created quickly and easily. It provides an excellent starting point for those who want to build a portfolio.</p>
+	<p><b>HOT:</b> with Drupalexp Masonry view style only use in this theme, you can build a <b>masonry visually</b> without any complex setting. You can reference <a href="https://www.youtube.com/watch?v=tgGe5Bi4cBM">here</a> to know to how build a masonry </p>
+	<p style="text-align:center;">
+		<img src="assets/images/portfolio-module.png"/>
+	</p>
+	<p> 
+	To manage portfolio categories, go to <strong>Structure &#65515; Taxonomy &#65515; Portfolio Categories </strong>menu to add new item or modify it.
+	</p>
+	<p style="text-align:center">
+		<img src="assets/images/portfolio-categories.png"/>
+	</p>
+</section>
+<section id="drupal_commerce">
+	<div class="page-header"><h3>Drupal Commerce</h3><hr class="notop"></div>
+	<p>
+	Drupal Commerce is used to build eCommerce websites and applications of all sizes. At its core it is lean and mean, enforcing strict development standards and leveraging the greatest features of Drupal 7 and major modules like Views and Rules for maximum flexibility.
+	</p>
+	<p>
+		Core Features
+	<ul class="line30">
+		<li>Create product types with custom attributes</li>
+		<li>Dynamic product displays</li>
+		<li>Order management, line item</li>
+		<li>Payment method API, allowing many different payment gateways</li>
+		<li>Tax calculation / VAT support</li>
+		<li>Discount pricing rules</li>
+		<li>Deep integration with systems like D7's Fields, Views, Rules and Entity API.</li>
+	</ul>
+	</p>
+	<p>You can reference to <a href="http://www.drupalcommerce.org/user-guide"> Drupal Commerce</a> to learn more about commerce</p>
+	<p>
+		Now, if you do not intend to use commerce in your website. You can temporary disable modules as below to increase performance
+	</p>
+	<section id="commerce_modules">
+	
+		<h4>Commerce modules</h4>
+		<p> To install Drupal commerce in your website, some modules is required:
+			<ul>
+				<li>Commerce 7.x-</li>
+				<li>Address Field 7.x-</li>
+				<li>Rules 7.x-</li>
+			</ul>
+		</p>
+		<p>
+			And some related modules  
+			<ul>
+				<li>Inline Entity Form 7.x-</li>
+				<li>Shipping 7.x-</li>
+				<li>Customer 7.x-</li>
+				<li>Fivestar 7.x-</li>
+				<li>VotingAPI 7.x-</li>
+			</ul>
+		</p>	
+	</section>
+	
+	<section id="Splash_shop">
+		<h4>Splash Commerce</h4>
+		<p>To work with Drupal commerce, you should understand clearly concept <b>Product Display</b> and <b>Product variations</b> in Drupal commerce before. So, we strongly recommend you read <a href="http://www.drupalcommerce.org/user-guide/products">Product document </a> before continuing.</p>
+		<h5>1. Splash Shop Product</h5>
+		<p>Splash is a clothes shop in demo, but you can easily build any shop type which you want.</p>
+		<p>
+			In Splash, we have created a "product display" content type to show products with some fields:
+			<ul class="line30">
+				<li><b>Product variations:</b> It is product reference. When you install commerce module, system will be create a product entity with basic field such as: title, SKU, status. <br/>In Splash shop, we add more properties to product entity:
+					<ul>
+						<li>Product Images</li>
+						<li>Product Price</li>
+						<li>Product Color</li>
+						<li>Product Size</li>
+					</ul>
+				It's up to your shop. You can add/remove more fields to meet your requirement	when building properties for product.
+				</li>
+				<li><b>Characteristics:</b> It is a term reference used for mark product with value such as: New, Featured... You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_characteristics to add more value or modify them.</li>
+				<li><b>Product Catelog:</b> It is used for classifying product such as categories. It is also term reference, so you can create sub category if you want. You can access to http://yoursiteurl.com/admin/structure/taxonomy/product_category to add more value or modify them</li>
+				<li><b>Product Rating:</b> It allows user rating a product. We used Fivestar module to do this function</li>
+				
+			</ul>
+		</p>
+	</section>
+	
+	<section id="widget_product">
+		<h4>Widgets Product</h4>
+		<p>Splash shop comes with some useful widgets block. It is usually use in commerce websites such as:</p>
+		<ul>
+			<li><b>Top Rating</b>: a block view to show products with average user rating from high to low</li>
+		</ul>
+	</section>
+</section>
+<!-- Section Thank you-->	
+<section id="thank_you">
+<h4>Thank you</h4>
+Thank you for purchasing the Splash theme. If you have any issues or feedback please <a href="http://themesvision.com/forum">contact us</a> or via our Themeforest author page.
+</section>	
+	</div>
+</body>
+</html>
